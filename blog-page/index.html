@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap Link -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+  <!-- Css Link -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <!-- JS Link -->
+  <script src="./script/script.js" defer></script>
+  <title>Blog Page</title>
+</head>
+
+
+<body>
+  <div class="container-fluid">
+    <!-- Header start -->
+    <header>
+        <div class="innerContainer d-flex p-2 justify-content-between align-items-center">
+            <img class="title" src="./images/logo.svg" />
+            <nav>
+                <ul class="d-flex p-2 gap-4 justify-content-between list-unstyled">
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>About Company</li>
+                    <li>Pricing</li>
+                </ul>
+            </nav>
+            <div class="sing-up-opt d-flex gap-2">
+                <button class="btn btn-primary sign-in">Sign in</button>
+                <button class="btn btn-secondary sign-up">Sign up</button>
+            </div>
+        </div>
+    </header>
+
+
+    <!--Main body-->
+    <main class="mt-4">
+        <div class="innerContainer">
+            <!-- Top Section -->
+            <section class="top d-flex justify-content-center gap-4">
+                    <img class="mainImg rounded image-fluid" src="./images/copy.jpg" /> 
+                <div class="description">
+                    <h1>
+                        Smooth, easy and trushworthy to give you on demand service
+                    </h1>
+                    <p class="mt-4">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ad autem, necessitatibus dolorum libero temporibus quis quod 
+                        velit maxime ex sapiente omnis iure. Voluptatum sunt, non animi 
+                        dolore <span>EliteFixer</span> porro.
+                    </p>
+                    <div class="buttons d-flex gap-2 mt-4">
+                        <button class="allServices btn col-md-4">Our All Services</button>
+                        <button class="works btn col-md-4 d-flex gap-2">
+                            <i class="fa fa-play-circle"></i>
+                            <span>How it works</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Middle Section -->
+            <section class="middle mt-5">
+                <h2 class="text-center">How Elite Fixer Works</h2>
+                <div class="d-flex p-2 gap-4 mt-4 justify-content-center">
+                    <div>
+                        <div class="midItem item rounded d-flex p-4 align-items-end justify-content-between">
+                            <h3>1</h3>
+                            <img class="midImg image-fluid rounded" src="./images/smallimg1.jpg"/>
+                        </div>
+                        <div class="p-2 text-center">
+                            <h4 class="my-2">Book Service</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Perferendis dolores.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="midItem item rounded d-flex p-4 align-items-end justify-content-between">
+                            <h3>2</h3>
+                            <img class="midImg image-fluid rounded" src="./images/smallimg2.jpg"/>
+                        </div>
+                        <div class="p-2 text-center">
+                            <h4 class="my-2">Confirm Service</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Perferendis dolores.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="midItem item rounded d-flex p-4 align-items-end justify-content-between">
+                            <h3>3</h3>
+                            <img class="midImg image-fluid rounded" src="./images/smallimg3.jpg"/>
+                        </div>
+                        <div class="p-2 text-center">
+                            <h4 class="my-2">Get Service and relax</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Perferendis dolores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom Section -->
+            <section class="bottom mt-5">
+                <h2>The Service we provide <span class="d-block">to our customer</span></h2>
+                <div class="container-fluid mt-4 d-flex gap-4">
+                    <img class=" bottomImg image-fluid rounded col-md-6" src="./images/copy2.jpg" />
+
+                    <div class="d-flex flex-column gap-3 col-md-6">
+                        <div class="bottomItem d-flex gap-2 p-2 align-items-center rounded">
+                            <img class="bottomImgS image-fluid rounded" src="./images/bottom1.jpg" />
+                            <div>
+                                <h5>Window Cleaning</h5>
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                        <div class="bottomItem d-flex gap-2 p-2 align-items-center rounded">
+                            <img class="bottomImgS image-fluid" src="./images/bottom1.jpg" />
+                            <div>
+                                <h5>Aircondition Repair</h5>
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                        <div class="bottomItem d-flex gap-2 p-2 align-items-center rounded">
+                            <img class="bottomImgS image-fluid rounded" src="./images/bottom1.jpg" />
+                            <div>
+                                <h5>Car Reparing</h5>
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+  </div>
+</body>
+</html>

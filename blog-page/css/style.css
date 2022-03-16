@@ -1,0 +1,70 @@
+
+/* Inner Container */
+div.innerContainer{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* Nav items */
+header div.innerContainer nav ul li{
+    cursor: pointer;
+}
+header div.innerContainer nav ul li:hover{
+    transform: scale(1.1);
+    color: rgb(0, 75, 110);
+}
+
+/* Main Image */
+img.mainImg{
+    max-width: 50%;
+}
+
+/*All Our services Button*/
+button.allServices{
+    border-radius: 20px;
+    height: 40px;
+    background-color: rgba(120, 47, 204, 0.7);
+    color: white;
+}
+button.allServices:hover,
+button.works:hover{
+    transform: scaleY(1.05);
+}
+
+/* How it works button */
+button.works{
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgba(112, 112, 112, 0.2);
+}
+button.works i{
+    font-size: 30px;
+}
+
+/* Middle items */
+img.midImg{
+    width: 80%;
+}
+div.midItem{
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.5);
+}
+
+/* Middle item text (1,2,3) */
+section.middle div.midItem h3{
+    font-size: 5rem;
+    color: rgb(206, 206, 206);
+}
+
+/* Working on Bottom image */
+img.bottomImgS{
+    height: 100px;
+}
+
+/* Bottom Item */
+div.bottomItem{
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.5);
+}

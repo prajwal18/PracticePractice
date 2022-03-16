@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Css Link -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <!-- JS Link -->
+  <script src="./script/script.js" defer></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Header start -->
+    <header>
+      <div class="inner-container">
+        <img class="expand-mobile" src="./images/icon-menu.svg" />
+        <div class="logo-cont">
+          <img class="logo" src="./images/logo.svg" />
+        </div>
+        <nav>
+          <img class="close" src="./images/icon-close.svg" /> 
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <div class="top-left">
+          <img class="cart" src="./images/icon-cart.svg" />
+          <img class="person" src="./images/image-avatar.png" />
+        </div>
+      </div>
+    </header>
+
+    <!--Main body-->
+    <main>
+      <div class="inner-container">
+        <div class="images">
+          <img class="main-image" src="./images/image-product-1.jpg" />
+          <div class="image-thumbnail">
+            <img src="./images/image-product-1-thumbnail.jpg" />
+            <img src="./images/image-product-2-thumbnail.jpg" />
+            <img src="./images/image-product-3-thumbnail.jpg" />
+            <img src="./images/image-product-4-thumbnail.jpg" />
+          </div>
+        </div>
+        <div class="description">
+          <div>
+            <div class="text">
+              <p class="title">Sneaker Company</p>
+              <h1>Fall Limited Edition Sneakers</h1>
+              <p class="desc-item">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                durable rubber outer sole, they’ll withstand everything the weather can offer.
+              </p>
+              <h2 class="final-price">$125.00 <span>50%</span></h2>
+              <h3 class="markup-price">$250.00</h3>
+            </div>
+            <div class="buy-options">
+              <div class="no-of-items">
+                <button class="plus"><img src="./images/icon-plus.svg" /></button>
+                <p id="quantity">0</p>
+                <button class="minus"><img src="./images/icon-minus.svg" /></button>
+              </div>
+              <button class="add-to-cart">
+                <img src="./images/icon-cart.svg" />
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

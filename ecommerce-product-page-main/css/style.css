@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --main-font: 'Kumbh Sans', sans-serif;
+    --font-size: 16px;
+
+    /* Colors */
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayish-blue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsla(0, 0%, 0%, 0.75);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{ font-size: var(--font-size);}
+
+body{
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+}
+header, main {
+    display: flex;
+    justify-content: center;
+    font-family: var(--main-font);
+}
+
+/* Hidden for desktop view*/
+img.expand-mobile,
+img.close {
+    display: none;
+    cursor: pointer;
+}
+
+/* Css for containers */
+div.container{
+    max-width: 1100px;
+    flex-grow: 1;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    flex-flow: column;
+}
+div.inner-container{
+    width: 100%;
+}
+/* ---------------- */
+
+
+/* Css for Header */
+div.container header div.inner-container {
+    padding: 1.5rem;
+    display: flex;
+    gap: 4rem;
+    border-bottom: 2px solid var(--grayish-blue);
+    align-items: center;
+}
+div.container header div.inner-container img.logo {
+    width: 138px;
+    height: 20px;
+}
+/* Header Nav */
+div.container header div.inner-container nav {
+    flex-grow: 1;
+}
+div.container header div.inner-container nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    color: var(--dark-grayish-blue);
+}
+div.container header div.inner-container nav ul li{ cursor: pointer;}
+div.container header div.inner-container nav ul li:hover{
+    color: var(--very-dark-blue);
+}
+/* top left images */
+div.container header div.inner-container div.top-left {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+div.container header div.inner-container div.top-left img{
+    cursor: pointer;
+}
+div.container header div.inner-container div.top-left img.person{
+    height: 50px;
+    width: 50px;
+}
+div.container header div.inner-container div.top-left img.person:hover{
+    border-radius: 50%;
+    border: 2px solid var(--orange);
+}
+/* Header Done */
+
+
+/*Main*/
+main div.inner-container{
+    padding: 1rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+/* Images */
+main div.inner-container div.images {
+    max-width: 400px;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+main div.inner-container div.images img {
+    border-radius: 5px;
+}
+main div.inner-container div.images img.main-image{
+    width: 100%;
+}
+main div.inner-container div.images div.image-thumbnail{
+    display: flex;
+    justify-content: space-around;
+}
+main div.inner-container div.images div.image-thumbnail img{
+    width: 20%;
+    cursor: pointer;
+}
+/* Item Description */
+main div.inner-container div.description{
+    display: flex;
+    align-items: center;
+}
+/*Text*/
+main div.inner-container div.description p.title{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--orange);
+}
+main div.inner-container div.description h1{
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+main div.inner-container div.description p.desc-item{
+    margin-top: 2rem;
+    color: var(--dark-grayish-blue);
+}
+main div.inner-container div.description h2.final-price{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+main div.inner-container div.description h2.final-price span{
+    margin-left: 1rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+    color: var(--orange);
+    background-color: hsla(26, 100%, 55%, 0.3);
+    border-radius: 2px;
+}
+main div.inner-container div.description h3{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: var(--grayish-blue);
+    text-decoration: line-through;
+}
+/* Buy options */
+main div.buy-options{
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+main div.inner-container div.buy-options div.no-of-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 30%;
+    background-color: var(--light-grayish-blue);
+    border-radius: 5px;
+}
+main div.inner-container div.buy-options div.no-of-items button{
+    height: 100%;
+    width: 33%;
+    max-width: 50px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+main div.inner-container div.buy-options div.no-of-items p{
+    text-align: center;
+    flex-grow: 1;
+}
+main div.inner-container div.buy-options div.no-of-items button:hover{
+    background-color: var(--dark-grayish-blue);
+}
+/*Add to cart Button*/
+main div.inner-container div.buy-options button.add-to-cart{
+    height: 50px;
+    border: none;
+    width: 60%;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--orange);
+    font-weight: 700;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+main div.inner-container div.buy-options button.add-to-cart:hover{
+    box-shadow: 0 1rem 20px hsla(26, 100%, 55%, 0.3);
+}
+
+
+
+/* Smaller Screen design */
+@media screen and (max-width: 900px){
+    main div.inner-container{
+        padding: 1rem 2rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    div.container header div.inner-container {
+        gap: 2rem;
+    }
+
+    main div.inner-container div.images {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 750px) {
+    div.container {
+        gap: 2rem;
+    }
+    img.expand-mobile{
+        display: inline;
+    }
+    div.container header div.inner-container div.logo-cont{
+        flex-grow: 1;
+    }
+
+
+    /*Working on the nav bar*/
+    div.container header div.inner-container nav{
+        display: none;
+        position: fixed;
+        top: 0px; left: 0px;
+        width: 80%;
+        height: 100vh;
+        padding: 2rem;
+        background-color: rgb(216, 216, 216);
+    }
+    div.container header div.inner-container nav img.close{
+        display: block;
+
+    }
+    div.container header div.inner-container nav ul {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    /*-------------------------------------------*/
+
+
+    /* Main Container */
+    main div.inner-container{
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        gap: 2rem;
+    }
+    main div.inner-container div.images{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Buy options buttons */
+    main div.inner-container div.buy-options div.no-of-items,
+    main div.inner-container div.buy-options button.add-to-cart{
+        width: 100%;
+    }
+}
+
+
