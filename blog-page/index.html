@@ -6,6 +6,10 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" 
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" 
+  integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Bootstrap Link -->
   <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
@@ -21,12 +25,16 @@
 
 
 <body>
-  <div class="container-fluid">
+  <div class="mw-100">
     <!-- Header start -->
     <header>
-        <div class="innerContainer d-flex p-2 justify-content-between align-items-center">
-            <img class="title" src="./images/logo.svg" />
-            <nav>
+        <div class="inner-container d-flex p-2 gap-3 justify-content-between align-items-center">
+            <div class="d-flex gap-3 align-items-center">
+                <img class="modulo d-block d-sm-none" src="./images/icon-menu.svg"/>
+                <img class="title" src="./images/logo.svg" />
+            </div>
+            <nav class="nav-bar">
+                <img class="close d-block d-sm-none m-2" src="./images/icon-close.svg" />
                 <ul class="d-flex p-2 gap-4 justify-content-between list-unstyled">
                     <li>Home</li>
                     <li>Services</li>
@@ -43,12 +51,12 @@
 
 
     <!--Main body-->
-    <main class="mt-4">
-        <div class="innerContainer">
+    <main class="mt-4 p-2">
+        <div class="inner-container">
             <!-- Top Section -->
-            <section class="top d-flex justify-content-center gap-4">
-                    <img class="mainImg rounded image-fluid" src="./images/copy.jpg" /> 
-                <div class="description">
+            <section class="top d-flex flex-wrap flex-md-nowrap justify-content-center gap-4">
+                    <img class="main-img col-8 col-md-6 rounded image-fluid" src="./images/copy.jpg" /> 
+                <div class="description p-2">
                     <h1>
                         Smooth, easy and trushworthy to give you on demand service
                     </h1>
@@ -59,8 +67,8 @@
                         dolore <span>EliteFixer</span> porro.
                     </p>
                     <div class="buttons d-flex gap-2 mt-4">
-                        <button class="allServices btn col-md-4">Our All Services</button>
-                        <button class="works btn col-md-4 d-flex gap-2">
+                        <button class="all-services btn px-2">Our All Services</button>
+                        <button class="works btn px-2 d-flex gap-2">
                             <i class="fa fa-play-circle"></i>
                             <span>How it works</span>
                         </button>
@@ -71,11 +79,11 @@
             <!-- Middle Section -->
             <section class="middle mt-5">
                 <h2 class="text-center">How Elite Fixer Works</h2>
-                <div class="d-flex p-2 gap-4 mt-4 justify-content-center">
-                    <div>
-                        <div class="midItem item rounded d-flex p-4 align-items-end justify-content-between">
+                <div class="d-flex p-2 flex-md-nowrap flex-wrap gap-4 mt-4 justify-content-center">
+                    <div class="col-md-3 col-sm-5 col-8">
+                        <div class="give-border mid-item item d-flex p-4 align-items-end justify-content-between">
                             <h3>1</h3>
-                            <img class="midImg image-fluid rounded" src="./images/smallimg1.jpg"/>
+                            <img class="mid-img image-fluid give-border" src="./images/smallimg1.jpg"/>
                         </div>
                         <div class="p-2 text-center">
                             <h4 class="my-2">Book Service</h4>
@@ -85,10 +93,10 @@
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <div class="midItem item rounded d-flex p-4 align-items-end justify-content-between">
+                    <div class="col-md-3 col-sm-5 col-8">
+                        <div class="give-border mid-item item d-flex p-4 align-items-end justify-content-between">
                             <h3>2</h3>
-                            <img class="midImg image-fluid rounded" src="./images/smallimg2.jpg"/>
+                            <img class="mid-img image-fluid give-border" src="./images/smallimg2.jpg"/>
                         </div>
                         <div class="p-2 text-center">
                             <h4 class="my-2">Confirm Service</h4>
@@ -98,10 +106,10 @@
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <div class="midItem item rounded d-flex p-4 align-items-end justify-content-between">
+                    <div class="col-md-3 col-sm-5 col-8">
+                        <div class="give-border mid-item item d-flex p-4 align-items-end justify-content-between">
                             <h3>3</h3>
-                            <img class="midImg image-fluid rounded" src="./images/smallimg3.jpg"/>
+                            <img class="mid-img image-fluid give-border" src="./images/smallimg3.jpg"/>
                         </div>
                         <div class="p-2 text-center">
                             <h4 class="my-2">Get Service and relax</h4>
@@ -114,29 +122,30 @@
                 </div>
             </section>
 
+
             <!-- Bottom Section -->
             <section class="bottom mt-5">
-                <h2>The Service we provide <span class="d-block">to our customer</span></h2>
-                <div class="container-fluid mt-4 d-flex gap-4">
-                    <img class=" bottomImg image-fluid rounded col-md-6" src="./images/copy2.jpg" />
+                <h2 class="text-center text-lg-start">The Service we provide <span class="d-lg-block d-sm-inline">to our customer</span></h2>
+                <div class="mt-4 d-flex flex-wrap flex-lg-nowrap gap-4 justify-content-center">
+                    <img class="bottom-img image-fluid rounded col-md-5 col-11" src="./images/copy2.jpg" />
 
-                    <div class="d-flex flex-column gap-3 col-md-6">
-                        <div class="bottomItem d-flex gap-2 p-2 align-items-center rounded">
-                            <img class="bottomImgS image-fluid rounded" src="./images/bottom1.jpg" />
+                    <div class="d-flex flex-column gap-3 col-md-5 col-11">
+                        <div class="give-border bottom-item d-flex gap-3 p-3 align-items-center">
+                            <img class="bottom-img-s image-fluid give-border" src="./images/bottom1.jpg" />
                             <div>
                                 <h5>Window Cleaning</h5>
                                 <p>Read More</p>
                             </div>
                         </div>
-                        <div class="bottomItem d-flex gap-2 p-2 align-items-center rounded">
-                            <img class="bottomImgS image-fluid" src="./images/bottom1.jpg" />
+                        <div class="give-border bottom-item d-flex gap-3 p-3 align-items-center">
+                            <img class="give-border bottom-img-s image-fluid" src="./images/bottom1.jpg" />
                             <div>
                                 <h5>Aircondition Repair</h5>
                                 <p>Read More</p>
                             </div>
                         </div>
-                        <div class="bottomItem d-flex gap-2 p-2 align-items-center rounded">
-                            <img class="bottomImgS image-fluid rounded" src="./images/bottom1.jpg" />
+                        <div class="give-border bottom-item d-flex gap-3 p-3 align-items-center">
+                            <img class="give-border bottom-img-s image-fluid" src="./images/bottom1.jpg" />
                             <div>
                                 <h5>Car Reparing</h5>
                                 <p>Read More</p>
@@ -146,14 +155,16 @@
                 </div>
             </section>
 
+
+
             <!-- bottomB Section -->
             <section class="bottomB my-5">
                 <h2 class="text-center">Why Elite Fixer?</h2>
-                <div class="container-fluid d-flex flex-wrap gap-3 mt-5 justify-content-center">
+                <div class="d-flex flex-wrap gap-3 mt-5 justify-content-center">
                 <!-- Articles -->
                     <!--Article One-->
-                    <article class="p-4 rounded-3" style="background-color: rgba(250, 233, 137, 0.5); width: 30%;">
-                        <img class="image-fluid rounded-3" style="width: 100px;" src="./images/2bot.jpg" />
+                    <article class="p-4 give-border article-service" style="background-color: rgba(250, 233, 137, 0.5);">
+                        <img class="image-fluid give-border" style="width: 100px;" src="./images/2bot.jpg" />
                         <h3 class="mt-3 text-capitalize">Can book simply</h3>
                         <p class="mt-2">
                             Lorem ipsum, dolor sit amet consetur adipcing elit. 
@@ -162,8 +173,8 @@
                         </p>
                     </article>
                     <!--Article Two-->
-                    <article class="p-4 rounded-3" style="background-color: rgba(4, 129, 160, 0.5); width: 30%;">
-                        <img class="image-fluid rounded-3" style="width: 100px;" src="./images/2bot.jpg" />
+                    <article class="p-4 give-border article-service" style="background-color: rgba(4, 129, 160, 0.5);">
+                        <img class="image-fluid give-border" style="width: 100px;" src="./images/2bot.jpg" />
                         <h3 class="mt-3 text-capitalize">Simple & secured</h3>
                         <p class="mt-2">
                             Lorem ipsum, dolor sit amet consetur adipcing elit. 
@@ -172,8 +183,8 @@
                         </p>
                     </article>
                     <!--Article Three-->
-                    <article class="p-4 rounded-3" style="background-color: rgba(205, 137, 250, 0.5); width: 30%;">
-                        <img class="image-fluid rounded-3" style="width: 100px;" src="./images/2bot.jpg" />
+                    <article class="p-4 give-border article-service" style="background-color: rgba(205, 137, 250, 0.5);">
+                        <img class="image-fluid give-border" style="width: 100px;" src="./images/2bot.jpg" />
                         <h3 class="mt-3 text-capitalize">trushworthy</h3>
                         <p class="mt-2">
                             Lorem ipsum, dolor sit amet consetur adipcing elit. 
@@ -182,8 +193,8 @@
                         </p>
                     </article>
                     <!--Article Four-->
-                    <article class="p-4 rounded-3" style="background-color: rgba(205, 137, 250, 0.5); width: 30%;">
-                        <img class="image-fluid rounded-3" style="width: 100px;" src="./images/2bot.jpg" />
+                    <article class="p-4 give-border article-service" style="background-color: rgba(205, 137, 250, 0.5);">
+                        <img class="image-fluid give-border" style="width: 100px;" src="./images/2bot.jpg" />
                         <h3 class="mt-3 text-capitalize">Job delivery as fast as soon</h3>
                         <p class="mt-2">
                             Lorem ipsum, dolor sit amet consetur adipcing elit. 
@@ -192,8 +203,8 @@
                         </p>
                     </article>
                     <!--Article Five-->
-                    <article class="p-4 rounded-3" style="background-color: rgba(250, 233, 137, 0.5); width: 30%;">
-                        <img class="image-fluid rounded-3" style="width: 100px;" src="./images/2bot.jpg" />
+                    <article class="p-4 give-border article-service" style="background-color: rgba(250, 233, 137, 0.5);">
+                        <img class="image-fluid give-border" style="width: 100px;" src="./images/2bot.jpg" />
                         <h3 class="mt-3 text-capitalize">Service warranty</h3>
                         <p class="mt-2">
                             Lorem ipsum, dolor sit amet consetur adipcing elit. 
@@ -202,8 +213,8 @@
                         </p>
                     </article>
                     <!--Article Six-->
-                    <article class="p-4 rounded-3" style="background-color: rgba(4, 129, 160, 0.5); width: 30%;">
-                        <img class="image-fluid rounded-3" style="width: 100px;" src="./images/2bot.jpg" />
+                    <article class="p-4 give-border article-service" style="background-color: rgba(4, 129, 160, 0.5);">
+                        <img class="image-fluid give-border" style="width: 100px;" src="./images/2bot.jpg" />
                         <h3 class="mt-3 text-capitalize">confirm satisfaction</h3>
                         <p class="mt-2">
                             Lorem ipsum, dolor sit amet consetur adipcing elit. 
@@ -215,17 +226,17 @@
             </section>
 
             <!-- bottomC Section -->
-            <section class="bottomC">
+            <section class="bottom-c p-2">
                 <!--Just some text-->
                 <div class="d-flex gap-2 align-items-center">
                     <div class="rounded bg-warning" style="width: 50px; height: 4px;"></div>
                     <span class="text-primary align-middle">Testimonials</span>
                 </div>
-                <h2 class="mt-5 mb-3 text-center">Our goal is to help you and your family to fix your House</h2>
+                <h2 class="mt-lg-5 mt-2 mb-3 text-center">Our goal is to help you and your family to fix your House</h2>
                 <!--Testimonials-->
-                <div class="mt-5 d-flex gap-3">
+                <div class="mt-5 d-flex flex-wrap flex-md-nowrap justify-content-center gap-3">
                     <!--Testimonial One-->
-                    <article class="p-4 rounded-3 bg-light" style="width: 50%;">
+                    <article class="p-4 give-border bg-light col-md-6 col-11">
                         <p class="lead">
                             Lorem ipsum, dolor sit amet consetur adipcing elit. 
                             Amet, fugit aperiam minus vel ttur iure! Asmenda 
@@ -242,7 +253,7 @@
                         </div>
                     </article>
                     <!--Testimonial two-->
-                    <article class="p-4 rounded-3 bg-light" style="width: 50%;">
+                    <article class="p-4 give-border bg-light col-md-6 col-11">
                         <p class="lead">
                             Lorem ipsum, dolor sit amet consetur adipcing elit. 
                             Amet, fugit aperiam minus vel ttur iure! Asmenda 
@@ -262,8 +273,8 @@
             </section>
 
             <!--Sign up form-->
-            <section class="my-5 mx-auto p-1 rounded-3 d-flex gap-5 justify-content-between" style="background-image: linear-gradient(45deg, rgba(96, 165, 177, 0.4), rgba(203, 240, 100, 0.2))">
-                <div class="p-5">
+            <section class="my-5 mx-auto give-border position-relative" style="background-image: linear-gradient(45deg, rgba(96, 165, 177, 0.4), rgba(203, 240, 100, 0.2))">
+                <div class="p-5 col-lg-7">
                     <h3 class="text-capitalize">Get our updates</h3>
                     <p class="mt-3">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolor 
@@ -276,14 +287,56 @@
                         <button class="btn rounded-3 w-25" style="background: orange; color: white;">Try Now</button>
                     </form>
                 </div>
-                <img src="./images/lastImg.jpg" class="image-fluid rounded-circle me-3" style="max-width: 35%;" />
+                <img src="./images/lastImg.jpg" class="big-img-bottom d-none d-lg-block image-fluid rounded-circle me-3 position-absolute top-50 end-0 translate-middle-y"/>
             </section>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer>
-        
+    <footer style="background: linear-gradient(45deg, rgba(177, 201, 201, 0.4), rgba(153, 95, 170, 0.3));" class="py-5 px-2">
+        <div class="inner-container">
+            <div class="links d-flex gap-5 flex-wrap flex-md-nowrap text-secondary p-2">
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                    <li class="head-link">Company Bio</li>
+                    <li>Blog</li>
+                    <li>Help center</li>
+                    <li>Sales tool catelog</li>
+                    <li>Academy</li>
+                    <li>Support</li>
+                </ul>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                    <li class="head-link">All pages</li>
+                    <li>home page</li>
+                    <li>about</li>
+                    <li>blog</li>
+                    <li>product</li>
+                    <li>Contact</li>
+                </ul>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                    <li class="head-link">Partnership</li>
+                    <li>Partners</li>
+                    <li>Preseller Programs</li>
+                    <li>AI Development</li>
+                    <li>Reasearch</li>
+                </ul>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                    <li class="head-link">Career</li>
+                    <li>opening post</li>
+                    <li>Apply Application</li>
+                    <li>Partner</li>
+                </ul>
+            </div>
+            <div class="footer-desc mt-3 d-flex flex-wrap flex-md-nowrap gap-3 justify-content-between align-items-center">
+                <p class="text-primary p-0 m-0">Copyright 2022, All Rights reserved</p>
+                <div class="d-flex gap-4 align-items-center">
+                    <p class="p-0 m-0">Follow us on: </p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
     </footer>
 
   </div>
