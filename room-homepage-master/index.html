@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CDN link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Plain CSS link -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <title>Room homepage</title>
+</head>
+<body>
+  <div class="flex justify-center w-full">
+    <main class="flex justify-center">
+      <div class="inner-container">
+
+        <!--left Top side-->
+        <div class="top relative flex">
+          <div class="w-6/12">
+            <img src="./images/desktop-image-hero-1.jpg" />
+            <nav class="absolute top-8 left-8 flex gap-8 items-center">
+              <img src="./images/logo.svg" />
+              <ul class="flex gap-4 capitalize text-white">
+                <li>home</li>
+                <li>Shop</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+          </div>
+
+          <!--Right top side-->
+          <div class="w-6/12 relative p-8">
+            <!--Button to navigate left or right -->
+            <div class="flex w-6/12 absolute bottom-0 left-0">
+              <button class="w-6/12 flex justify-center p-4 bg-black">
+                <img src="./images/icon-angle-left.svg" />
+              </button>
+              <button class="w-6/12 flex justify-center p-4 bg-black">
+                <img src="./images/icon-angle-right.svg" />
+              </button>
+            </div>
+            <h1 class="text-4xl font-bold">Discover innovative ways to decorate</h1>
+            <p class="mt-4">
+              We provide unmatched quality, comfort, and style for property owners across the country. 
+              Our experts combine form and function in bringing your vision to life. Create a room in your 
+              own style with our collection and make your property a reflection of you and what you love.
+            </p>
+            <button class="mt-4 flex gap-4 items-center">
+              <p class="uppercase tracking-widest font-bold">Shop now</p>
+              <img src="./images/icon-arrow.svg" />
+            </button>
+          </div>
+        </div>
+
+        <!--Left bottom side -->
+        <div class="bottom flex">
+          <div class="w-3/12">
+            <img src="./images/image-about-dark.jpg" />
+          </div>
+          <!-- Middle bottom side -->
+          <div class="w-6/12 p-2">
+            <h2 class="text-xl font-bold uppercase tracking-wide">About our furniture</h2>
+            <p class="mt-4 text-stone-500">
+              Our multifunctional collectio blends design and function to suit your individual taste.
+              Make each room unique, or pick a cohesive theme that best express your interests and what 
+              inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+              or anything in between. Product specialists are available to help you create your dream space.
+            </p>
+          </div>
+          <!--Right bottom side -->
+          <div class="w-3/12">
+            <img src="./images/image-about-light.jpg" />
+          </div>
+          </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

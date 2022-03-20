@@ -1,0 +1,38 @@
+:root{
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%); 
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+/*Adding background to the website*/
+.background-cool,
+.background-cool-b{
+    background: var(--red) url('../images/bg-intro-desktop.png') center center ;
+}
+.background-cool-b{
+    background-color: rgba(76, 85, 85, 0.4);
+}
+
+/* Giving the main container a max width */
+.inner-container{
+    width: 100%;
+    max-width: 1440px;
+}
+
+/* Giving description a max-width */
+.desc-section,
+.form-section{
+    max-width: 500px;
+}
+
+/* Custom Shadow */
+.custom-shadow{
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.6);
+}
+
+/*NFT card*/
+.nft-card{
+    max-width: 300px;
+}
